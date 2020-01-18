@@ -1,4 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -33,45 +34,76 @@
 <!-- Wrapper -->
 <!-- ============================================================== -->
 <div id="wrapper">
-    <!-- End Top Navigation -->
-    <!-- ============================================================== -->
-    <!-- Left Sidebar - style you can find in sidebar.scss  -->
-    <!-- ============================================================== -->
+    <nav class="navbar navbar-default navbar-static-top m-b-0">
+        <div class="navbar-header" style="height: 68px;">
+            <div class="top-left-part">
+                <!-- Logo -->
+                <a class="logo">
+
+                    <span class="hidden-xs">
+                        <img src="../img/headlogo.png" alt="home" class="light-logo" width="100%" height="100%"/>
+                        </span>
+                </a>
+            </div>
+            <!-- /Logo -->
+            <ul class="nav navbar-top-links navbar-right pull-right">
+                <li>
+                    <a class="nav-toggler open-close waves-effect waves-light hidden-md hidden-lg" href="javascript:void(0)"><i class="fa fa-bars"></i></a>
+                </li>
+                <li>
+                    <form role="search" class="app-search hidden-sm hidden-xs m-r-10">
+                        <input type="text" placeholder="Search..." class="form-control">
+                        <a href="">
+                            <i class="fa fa-search"></i>
+                        </a>
+                    </form>
+                </li>
+                <li>
+                    <c:if test="${!empty student}">
+                        <a class="profile-pic" href="#">用户：${student.sname}</a>
+                    </c:if>
+                    <c:if test="${empty student}">
+                        请先<a class="profile-pic" href="../login"> 登录 </a>
+                    </c:if>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
     <div class="navbar-default sidebar" role="navigation">
         <div class="sidebar-nav slimscrollsidebar">
             <div class="sidebar-head">
                 <h3><span class="fa-fw open-close"><i class="ti-close ti-menu"></i></span> <span
-                        class="hide-menu">导航栏</span></h3>
+                        class="hide-menu">Navigation</span></h3>
             </div>
             <ul class="nav" id="side-menu">
                 <li style="padding: 70px 0 0;">
-                    <a href="dashboard.html" class="waves-effect"><i class="fa fa-clock-o fa-fw"
-                                                                     aria-hidden="true"></i>Dashboard</a>
+                    <a href="homepage" class="waves-effect"><i class="fa fa-clock-o fa-fw" aria-hidden="true"></i>主页[Home]</a>
                 </li>
                 <li>
-                    <a href="profile.html" class="waves-effect"><i class="fa fa-user fa-fw"
-                                                                   aria-hidden="true"></i>Profile</a>
+                    <a href="#" class="waves-effect"><i class="fa fa-user fa-fw" aria-hidden="true"></i>个人主页[Personal Page]</a>
                 </li>
                 <li>
-                    <a href="lostfound" class="waves-effect"><i class="fa fa-table fa-fw"
-                                                                     aria-hidden="true"></i>留言板</a>
+                    <a href="experiments" class="waves-effect"><i class="fa fa-table fa-fw" aria-hidden="true"></i>实验预约<br/>[Experiment Appointment]</a>
                 </li>
                 <li>
-                    <a href="fontawesome.html" class="waves-effect"><i class="fa fa-font fa-fw"
-                                                                       aria-hidden="true"></i>Icons</a>
+                    <a href="query_teacher" class="waves-effect"><i class="fa fa-info-circle fa-fw" aria-hidden="true"></i>任课教师查询<br/>[Query Teacher]</a>
                 </li>
                 <li>
-                    <a href="mailbox" class="waves-effect"><i class="fa fa-globe fa-fw"
-                                                                   aria-hidden="true"></i>投诉信箱</a>
+                    <a href="message" class="waves-effect"><i class="fa fa-font fa-fw" aria-hidden="true"></i>留言板<br/>[Message Board]</a>
                 </li>
                 <li>
-                    <a href="message" class="waves-effect"><i class="fa fa-columns fa-fw"
-                                                                   aria-hidden="true"></i>失物招领</a>
+                    <a href="lostfound" class="waves-effect"><i class="fa fa-globe fa-fw" aria-hidden="true"></i>失物招领<br/>[Lost and Found]</a>
+                </li>
+                <li>
+                    <a href="mailbox" class="waves-effect"><i class="fa fa-columns fa-fw" aria-hidden="true"></i>投诉信箱<br/>[Complaint Mailbox]</a>
+                </li>
+                <li>
+                    <a href="#" class="waves-effect"><i class="fa fa-info-circle fa-fw" aria-hidden="true"></i>教师通道<br/>[Teacher Channel]</a>
                 </li>
             </ul>
             <div class="center p-20">
-                <a href="#" target="_blank"
-                   class="btn btn-danger btn-block waves-effect waves-light">登录</a>
+                <a href="../login" class="btn btn-danger btn-block waves-effect waves-light" aria-hidden="true">登录</a>
             </div>
         </div>
     </div>
@@ -128,12 +160,12 @@
         </div>
     </div>
     <!-- /.container-fluid -->
-    <footer class="footer text-center"> 2020&copy; 黑龙江大学 <a href="#" target="_blank" >物理选课系统</a> - made from <a href="#" target="_blank">计软科协web</a> </footer>
+    <footer class="footer text-center">@2020 黑龙江大学 大学物理实验系统</footer>
 </div>
 <!-- ============================================================== -->
 <!-- End Page Content -->
 <!-- ============================================================== -->
-</div>
+
 <!-- /#wrapper -->
 <!-- jQuery -->
 <script src="plugins/bower_components/jquery/dist/jquery.min.js"></script>

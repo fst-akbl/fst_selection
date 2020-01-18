@@ -1,4 +1,12 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: asus
+  Date: 2020/1/16
+  Time: 22:54
+  To change this template use File | Settings | File Templates.
+--%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -33,45 +41,76 @@
 <!-- Wrapper -->
 <!-- ============================================================== -->
 <div id="wrapper">
-    <!-- End Top Navigation -->
-    <!-- ============================================================== -->
-    <!-- Left Sidebar - style you can find in sidebar.scss  -->
-    <!-- ============================================================== -->
+    <nav class="navbar navbar-default navbar-static-top m-b-0">
+        <div class="navbar-header" style="height: 68px;">
+            <div class="top-left-part">
+                <!-- Logo -->
+                <a class="logo">
+
+                    <span class="hidden-xs">
+                        <img src="../img/headlogo.png" alt="home" class="light-logo" width="100%" height="100%"/>
+                        </span>
+                </a>
+            </div>
+            <!-- /Logo -->
+            <ul class="nav navbar-top-links navbar-right pull-right">
+                <li>
+                    <a class="nav-toggler open-close waves-effect waves-light hidden-md hidden-lg" href="javascript:void(0)"><i class="fa fa-bars"></i></a>
+                </li>
+                <li>
+                    <form role="search" class="app-search hidden-sm hidden-xs m-r-10">
+                        <input type="text" placeholder="Search..." class="form-control">
+                        <a href="">
+                            <i class="fa fa-search"></i>
+                        </a>
+                    </form>
+                </li>
+                <li>
+                    <c:if test="${!empty student}">
+                        <a class="profile-pic" href="#">用户：${student.sname}</a>
+                    </c:if>
+                    <c:if test="${empty student}">
+                        请先<a class="profile-pic" href="../login"> 登录 </a>
+                    </c:if>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
     <div class="navbar-default sidebar" role="navigation">
         <div class="sidebar-nav slimscrollsidebar">
             <div class="sidebar-head">
                 <h3><span class="fa-fw open-close"><i class="ti-close ti-menu"></i></span> <span
-                        class="hide-menu">导航栏</span></h3>
+                        class="hide-menu">Navigation</span></h3>
             </div>
             <ul class="nav" id="side-menu">
                 <li style="padding: 70px 0 0;">
-                    <a href="dashboard.html" class="waves-effect"><i class="fa fa-clock-o fa-fw"
-                                                                     aria-hidden="true"></i>Dashboard</a>
+                    <a href="homepage" class="waves-effect"><i class="fa fa-clock-o fa-fw" aria-hidden="true"></i>主页[Home]</a>
                 </li>
                 <li>
-                    <a href="profile.html" class="waves-effect"><i class="fa fa-user fa-fw"
-                                                                   aria-hidden="true"></i>Profile</a>
+                    <a href="#" class="waves-effect"><i class="fa fa-user fa-fw" aria-hidden="true"></i>个人主页[Personal Page]</a>
                 </li>
                 <li>
-                    <a href="lostfound" class="waves-effect"><i class="fa fa-table fa-fw"
-                                                                     aria-hidden="true"></i>留言板</a>
+                    <a href="experiments" class="waves-effect"><i class="fa fa-table fa-fw" aria-hidden="true"></i>实验预约<br/>[Experiment Appointment]</a>
                 </li>
                 <li>
-                    <a href="fontawesome.html" class="waves-effect"><i class="fa fa-font fa-fw"
-                                                                       aria-hidden="true"></i>Icons</a>
+                    <a href="query_teacher" class="waves-effect"><i class="fa fa-info-circle fa-fw" aria-hidden="true"></i>任课教师查询<br/>[Query Teacher]</a>
                 </li>
                 <li>
-                    <a href="mailbox" class="waves-effect"><i class="fa fa-globe fa-fw"
-                                                                   aria-hidden="true"></i>投诉信箱</a>
+                    <a href="message" class="waves-effect"><i class="fa fa-font fa-fw" aria-hidden="true"></i>留言板<br/>[Message Board]</a>
                 </li>
                 <li>
-                    <a href="message" class="waves-effect"><i class="fa fa-columns fa-fw"
-                                                                   aria-hidden="true"></i>失物招领</a>
+                    <a href="lostfound" class="waves-effect"><i class="fa fa-globe fa-fw" aria-hidden="true"></i>失物招领<br/>[Lost and Found]</a>
+                </li>
+                <li>
+                    <a href="mailbox" class="waves-effect"><i class="fa fa-columns fa-fw" aria-hidden="true"></i>投诉信箱<br/>[Complaint Mailbox]</a>
+                </li>
+                <li>
+                    <a href="#" class="waves-effect"><i class="fa fa-info-circle fa-fw" aria-hidden="true"></i>教师通道<br/>[Teacher Channel]</a>
                 </li>
             </ul>
             <div class="center p-20">
-                <a href="#" target="_blank"
-                   class="btn btn-danger btn-block waves-effect waves-light">登录</a>
+                <a href="../login" class="btn btn-danger btn-block waves-effect waves-light" aria-hidden="true">登录</a>
             </div>
         </div>
     </div>
@@ -89,113 +128,57 @@
                 </div>
             </div>
             <div class="row">
+
                 <div class="col-md-12">
                     <div class="white-box">
-                        <h3 class="box-title">失物招领</h3>
+                        <h3 class="box-title">留言板</h3>
                         <div style="border:3px solid RGB(237,241,245)">
                             <table class="table">
-                                <thead>
                                 <tr>
-                                    <th>el表达式id</th>
-                                    <th>el表达式主题</th>
-                                    <th></th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td></td>
-                                    <td>el表达式详细内容</td>
-                                    <td></td>
+                                    <td style="background-color:RGB(237,241,245);color: black;text-align: center">编号：</td>
+                                    <td>el表达式id</td>
+                                    <td style="background-color:RGB(237,241,245);color: black;text-align: center">留言时间：</td>
+                                    <td>获取当前时间</td>
                                 </tr>
                                 <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td>el表达式 谁发布的+时间</td>
+                                    <td style="background-color:RGB(237,241,245);color: black;text-align: center">姓名：</td>
+                                    <td>el表达式姓名</td>
+                                    <td style="background-color:RGB(237,241,245);color: black;text-align: center">留言给：</td>
+                                    <td>el表达式留言给</td>
                                 </tr>
-                                </tbody>
+                                <tr>
+                                    <td style="background-color:RGB(237,241,245);color: black;text-align: center">留言：</td>
+                                    <td colspan="3">el表达式 谁发布的+时间</td>
+                                </tr>
+                                <tr>
+                                    <td style="background-color:RGB(237,241,245);color: black;text-align: center">回复：</td>
+                                    <td colspan="3">el表达式回复内容</td>
+                                </tr>
                             </table>
                         </div>
                     </div>
                 </div>
+
                 <div class="white-box" style="float:left;width:46%;margin:2%;">
-                    <p>信息发布</p>
+                    <p>我要留言</p>
                     <form class="form-horizontal form-material">
                         <div class="form-group">
-                            <label class="col-md-12">信息主题：</label>
+                            <label class="col-md-12">姓名：</label>
                             <div class="col-md-12">
                                 <input type="text"
                                        class="form-control form-control-line"> </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-md-12">详细信息：</label>
+                            <label class="col-md-12">留言给：</label>
                             <div class="col-md-12">
                                 <textarea rows="5" class="form-control form-control-line"></textarea>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-sm-12">选择类型：</label>
-                            <div class="col-sm-12">
-                                <select class="form-control form-control-line">
-                                    <option>招领</option>
-                                    <option>遗失</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-md-12">学号</label>
+                            <label class="col-md-12">留言：</label>
                             <div class="col-md-12">
                                 <input type="text"
                                        class="form-control form-control-line">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-md-12">密码</label>
-                            <div class="col-md-12">
-                                <input type="password" value="password" class="form-control form-control-line">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-sm-12">
-                                <submit class="btn btn-success">提交</submit>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="white-box" style="float:left;width:46%;margin:2%;">
-                    <p>信息回复</p>
-                    <form class="form-horizontal form-material">
-                        <div class="form-group">
-                            <label class="col-md-12">回复主题号：</label>
-                            <div class="col-md-12">
-                                <input type="text"
-                                       class="form-control form-control-line"> </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-md-12">回复内容：</label>
-                            <div class="col-md-12">
-                                <textarea rows="5" class="form-control form-control-line"></textarea>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-sm-12">选择类型：</label>
-                            <div class="col-sm-12">
-                                <select class="form-control form-control-line">
-                                    <option>招领</option>
-                                    <option>遗失</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-md-12">学号</label>
-                            <div class="col-md-12">
-                                <input type="text"
-                                       class="form-control form-control-line">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-md-12">密码</label>
-                            <div class="col-md-12">
-                                <input type="password" value="password" class="form-control form-control-line">
                             </div>
                         </div>
                         <div class="form-group">
@@ -209,12 +192,11 @@
         </div>
     </div>
     <!-- /.container-fluid -->
-    <footer class="footer text-center"> 2020&copy; 黑龙江大学 <a href="#" target="_blank" >物理选课系统</a> - made from <a href="#" target="_blank">计软科协web</a> </footer>
+    <footer class="footer text-center">@2020 黑龙江大学 大学物理实验系统</footer>
 </div>
 <!-- ============================================================== -->
 <!-- End Page Content -->
 <!-- ============================================================== -->
-</div>
 <!-- /#wrapper -->
 <!-- jQuery -->
 <script src="plugins/bower_components/jquery/dist/jquery.min.js"></script>
