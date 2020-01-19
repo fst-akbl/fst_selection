@@ -117,45 +117,51 @@
         <div class="container-fluid">
             <div class="row bg-title">
                 <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                    <h4 class="page-title">黑龙江大学物理选课</h4>
+                    <h1 class="page-title">投诉信箱</h1>
                 </div>
+	            <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
+		            <ol class="breadcrumb">
+			            <li><a href="homepage">主页</a></li>
+			            <li class="active">投诉信箱</li>
+		            </ol>
+	            </div>
             </div>
             <div class="row">
-                <div class="white-box" style="float:left;width:46%;margin:2%;">
-                    <p>投诉信箱</p>
-                    <form class="form-horizontal form-material">
-                        <div class="form-group">
-                            <label class="col-md-12">投诉主题：</label>
-                            <div class="col-md-12">
-                                <input type="text"
-                                       class="form-control form-control-line"> </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-md-12">投诉内容：</label>
-                            <div class="col-md-12">
-                                <textarea rows="5" class="form-control form-control-line"></textarea>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-md-12">学号</label>
-                            <div class="col-md-12">
-                                <input type="text"
-                                       class="form-control form-control-line">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-md-12">密码</label>
-                            <div class="col-md-12">
-                                <input type="password" value="password" class="form-control form-control-line">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-sm-12">
-                                <submit class="btn btn-success">提交</submit>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+	            <div class="white-box" style="width:50%;margin: 0 auto;">
+		            <form class="form-horizontal form-material">
+			            <div class="form-group">
+				            <label class="col-md-12">投诉主题：</label>
+				            <div class="col-md-12">
+					            <input type="text" class="form-control form-control-line"> </div>
+			            </div>
+			            <div class="form-group">
+				            <label class="col-md-12">投诉内容：</label>
+				            <div class="col-md-12">
+					            <textarea rows="5" class="form-control form-control-line" style="resize: none"></textarea>
+				            </div>
+			            </div>
+			            <div class="form-group">
+				            <label class="col-md-12">学号</label>
+				            <div class="col-md-12">
+					            <input type="text" class="form-control form-control-line" style="width:100px">
+				            </div>
+			            </div>
+			            <div class="form-group">
+				            <label class="col-md-12">密码</label>
+				            <div class="col-md-12">
+					            <input type="password" value="password" class="form-control form-control-line" style="width: 100px">
+				            </div>
+			            </div>
+			            <div class="form-group">
+				            <div class="col-sm-12" style="width: 150px;float: left">
+					            <submit class="btn btn-success">提交</submit>
+				            </div>
+				            <div class="col-sm-12" style="width: 150px;float: right">
+				            <a href="#" class="btn btn-danger btn-block waves-effect waves-light" aria-hidden="true">查看投诉</a>
+				            </div>
+			            </div>
+		            </form>
+	            </div>
             </div>
         </div>
     </div>

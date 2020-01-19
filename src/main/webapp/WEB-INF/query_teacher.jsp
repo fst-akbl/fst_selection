@@ -130,7 +130,13 @@
 		<div class="container-fluid">
 			<div class="row bg-title">
 				<div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-					<h4 class="page-title">查询任课教师</h4>
+					<h1 class="page-title">任课教师查询</h1>
+				</div>
+				<div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
+					<ol class="breadcrumb">
+						<li><a href="homepage">主页</a></li>
+						<li class="active">任课教师查询</li>
+					</ol>
 				</div>
 
 				<!-- /.col-lg-12 -->
@@ -138,31 +144,36 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="white-box">
-						<form>
-							实验：
-							<select>
-								<option value ="volvo">Volvo</option>
-								<option value ="saab">Saab</option>
-								<option value="opel">Opel</option>
-								<option value="audi">Audi</option>
-							</select>
-							周次：
-							<select>
-								<option value ="volvo">Volvo</option>
-								<option value ="saab">Saab</option>
-								<option value="opel">Opel</option>
-								<option value="audi">Audi</option>
-							</select>
-							节次：
-							<select>
-								<option value ="volvo">Volvo</option>
-								<option value ="saab">Saab</option>
-								<option value="opel">Opel</option>
-								<option value="audi">Audi</option>
-							</select>
-							<br/>
-							任课教师：
-						</form>
+						<div style="text-align: center; font-size: 150%;">
+							<form>
+								实验：
+								<select>
+									<option value ="volvo">Volvo</option>
+									<option value ="saab">Saab</option>
+									<option value="opel">Opel</option>
+									<option value="audi">Audi</option>
+								</select>
+								<br/>
+								周次：
+								<select>
+									<option value ="volvo">Volvo</option>
+									<option value ="saab">Saab</option>
+									<option value="opel">Opel</option>
+									<option value="audi">Audi</option>
+								</select>
+								<br/>
+								节次：
+								<select>
+									<option value ="volvo">Volvo</option>
+									<option value ="saab">Saab</option>
+									<option value="opel">Opel</option>
+									<option value="audi">Audi</option>
+								</select>
+								<br/>
+								任课教师：
+							</form>
+						</div>
+
 
 					</div>
 				</div>

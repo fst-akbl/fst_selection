@@ -129,7 +129,7 @@
         <div class="container-fluid">
             <div class="row bg-title">
                 <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                    <h4 class="page-title">实验预约</h4>
+                    <h1 class="page-title">实验预约</h1>
                 </div>
                 <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
                     <ol class="breadcrumb">
@@ -143,7 +143,7 @@
             <div class="row">
                 <div class="col-sm-12">
                     <div class="white-box">
-                        <h3 class="box-title">预约实验</h3>
+                        <h3 class="box-title">当前预约实验</h3>
                         <p class="text-muted"></p>
                         <div class="table-responsive">
                             <table class="table">
@@ -151,7 +151,7 @@
                                 <tr>
                                     <th>实验序号</th>
                                     <th>实验名称</th>
-                                    <th>周数</th>
+                                    <th>周次</th>
                                     <th>节次</th>
                                     <th>实验室号</th>
                                     <th>座位号</th>
@@ -163,7 +163,7 @@
                                 <tr>
                                     <td>001</td>
                                     <td>力热实验</td>
-                                    <td>2-10周 14-14周</td>
+                                    <td>2</td>
                                     <td>1-4节</td>
                                     <td>实验楼111</td>
                                     <td>05</td>
@@ -174,7 +174,7 @@
                                 <tr>
                                     <td>002</td>
                                     <td>光学实验</td>
-                                    <td>2-10周 14-14周</td>
+                                    <td>3</td>
                                     <td>1-4节</td>
                                     <td>实验楼222</td>
                                     <td>05</td>

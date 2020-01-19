@@ -117,13 +117,19 @@
         <div class="container-fluid">
             <div class="row bg-title">
                 <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                    <h4 class="page-title">黑龙江大学物理选课</h4>
+                    <h1 class="page-title">失物招领</h1>
                 </div>
+	            <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
+		            <ol class="breadcrumb">
+			            <li><a href="homepage">主页</a></li>
+			            <li class="active">失物招领</li>
+		            </ol>
+	            </div>
             </div>
             <div class="row">
                 <div class="col-md-12">
                     <div class="white-box">
-                        <h3 class="box-title">失物招领</h3>
+                        <h2 class="box-title">寻物启事</h2>
                         <div style="border:3px solid RGB(237,241,245)">
                             <table class="table">
                                 <thead>
@@ -150,7 +156,7 @@
                     </div>
                 </div>
                 <div class="white-box" style="float:left;width:46%;margin:2%;">
-                    <p>信息发布</p>
+                    <p>发布启事</p>
                     <form class="form-horizontal form-material">
                         <div class="form-group">
                             <label class="col-md-12">信息主题：</label>
@@ -161,7 +167,7 @@
                         <div class="form-group">
                             <label class="col-md-12">详细信息：</label>
                             <div class="col-md-12">
-                                <textarea rows="5" class="form-control form-control-line"></textarea>
+                                <textarea rows="5" class="form-control form-control-line" style="resize: none" ></textarea>
                             </div>
                         </div>
                         <div class="form-group">
@@ -205,7 +211,7 @@
                         <div class="form-group">
                             <label class="col-md-12">回复内容：</label>
                             <div class="col-md-12">
-                                <textarea rows="5" class="form-control form-control-line"></textarea>
+                                <textarea rows="5" class="form-control form-control-line" style="resize: none"></textarea>
                             </div>
                         </div>
                         <div class="form-group">

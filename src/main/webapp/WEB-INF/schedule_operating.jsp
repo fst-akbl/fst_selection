@@ -128,7 +128,7 @@
         <div class="container-fluid">
             <div class="row bg-title">
                 <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                    <h4 class="page-title">实验预约</h4>
+                    <h1 class="page-title">实验预约</h1>
                 </div>
                 <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
                     <ol class="breadcrumb">
@@ -174,10 +174,23 @@
                                     <td>&nbsp;</td><!--  格式需要，勿删-->
                                 </tr>
                                 <tr>
+	                                <td>&nbsp;</td><!--  格式需要，勿删-->
+	                                <td>实验节次:
+		                                <select  class="form-control form-control-line" style="width:40%">
+			                                <option>01</option>
+			                                <option>02</option>
+			                                <option>03</option>
+		                                </select>
+	                                </td>
+	                                <td>&nbsp;</td><!--  格式需要，勿删-->
+                                </tr>
+                                <tr>
                                     <td>&nbsp;</td><!--  格式需要，勿删-->
                                     <form>
-                                        <td><button class="btn btn-danger btn-block waves-effect waves-light" style="width:40%">查询该实验空座位表</button></td>
-                                        <a href="starting">此处将跳到schedule_starting</a>
+                                        <td>
+	                                        <button class="btn btn-danger btn-block waves-effect waves-light" style="width:20%">查询剩余座位</button>
+	                                        <submit class="btn btn-success" style="width:20%">预约实验</submit>
+                                        </td>
                                     </form>
                                     <td>&nbsp;</td><!--  格式需要，勿删-->
                                 </tr>

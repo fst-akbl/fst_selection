@@ -130,7 +130,7 @@
         <div class="container-fluid">
             <div class="row bg-title">
                 <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                    <h4 class="page-title">实验预约</h4>
+                    <h1 class="page-title">实验预约</h1>
                 </div>
                 <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
                     <ol class="breadcrumb">
@@ -161,32 +161,25 @@
                             </table>
 
                             <table class="table">
-                                <thead>
-                                <tr>
-                                    <th>序号</th>
-                                    <th>操作名称</th>
-                                    <th>备注</th>
-                                </tr>
-                                </thead>
                                 <tbody>
                                 <tr>
                                     <td>1</td>
                                     <td><a href="operating">预约实验</a>[Schedule Experiments]</td>
-                                    <td>可以根据实验名称、周次检索空座并预约实验<br/>[You can search for empty seats and schedule experiments based on the experiment name and weeks of class]</td>
+                                    <td>根据实验名称、周次检索空座并预约实验<br/>[You can search for empty seats and schedule experiments based on the experiment name and weeks of class]</td>
 
                                 </tr>
                                 <tr>
                                     <td>2</td>
                                     <td><a href="search">查询预约状态</a>[Query Experiment]</td>
-                                    <td>可以查看当前预约实验的状态，也可以取消预约的实验<br/>[You can view the status of the currently scheduled experiment, or cancel the scheduled experiment]</td>
+                                    <td>查看当前预约实验的状态，也可以取消预约的实验<br/>[You can view the status of the currently scheduled experiment, or cancel the scheduled experiment]</td>
                                 </tr>
                                 <tr>
-                                    <td></td>
+                                    <td>3</td>
                                     <td><a class="register-link" href="/student/updateStudent?id=${student.id}">修改个人密码</a>[Change Password]</td>
                                 </tr>
                                 </tbody>
                             </table>
-                            <h2>完成操作后，请注意<a href="../login" >登出</a></h2>
+                            <h5>完成操作后，请注意<a href="../login" >登出</a></h5>
                         </div>
                     </div>
                 </div>

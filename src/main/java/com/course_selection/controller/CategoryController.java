@@ -36,10 +36,6 @@ public class CategoryController {
     public String operating(){
         return "schedule_operating";
     }
-    @RequestMapping("/starting")
-    public String starting(){
-        return "schedule_starting";
-    }
     @RequestMapping("/search")
     public String search(){
         return "search_operating";
